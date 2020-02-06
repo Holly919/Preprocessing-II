@@ -1,1 +1,13 @@
 // Mixins in here
+.clickable(@c) {
+    color: @c;
+    
+    &:hover {
+      color: darken(@c, 10%);
+    }
+
+    a {
+        border: 1px solid @primary-color;
+        padding: 10px 40px;
+        border-radius: 10px;
+    }
