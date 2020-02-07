@@ -359,65 +359,11 @@ header .navigation nav a:hover {
   padding: 10px;
   border-radius: 10px;
   color: #FFFFFF;
-  font: 2rem;
+  font-size: 2rem;
   text-align: center;
   background-color: #17A2B8;
 }
 .home .content-pick .destination .btn:hover {
   background-color: #FFEBCD;
-  color: white;
-}
-.home .info-form {
-  border-radius: 5px;
-  color: #212529;
-  padding: 2%;
-  margin: 2%;
-  font-size: 1.4rem;
-}
-.home .info-form h4 {
-  margin-bottom: 13px;
-  text-align: center;
-}
-.home .info-form label {
-  display: inline-block;
-  width: 20%;
-}
-@media (max-width: 500px) {
-  .home .info-form label {
-    width: 100%;
-    text-align: center;
-  }
-}
-.home .info-form input[type=text] {
-  border: 2px solid black;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  border-radius: 5px;
-  width: 78%;
-}
-@media (max-width: 500px) {
-  .home .info-form input[type=text] {
-    width: 100%;
-  }
-}
-.home .info-form input[type=text]:focus {
-  background-color: #FFEBCD;
-}
-.home .info-form input[type=submit] {
-  background-color: #17A2B8;
-  border: 2px solid black;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  margin-left: 42%;
-  cursor: pointer;
-  border-radius: 5px;
-}
-@media (max-width: 500px) {
-  .home .info-form input[type=submit] {
-    margin-left: 35%;
-  }
+  color: black;
 }
