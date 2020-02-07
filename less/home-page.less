@@ -1,19 +1,19 @@
 .home {
 
   .top-content {
-
+  
     .img-content {
       width: 100%;
-      border-bottom: 2px dashed silver;
     }
     img {
-      width: 99%;
+      width: 90%;
       margin: 1%;
-      justify-content: center;
     }
     
     .text-container {
       margin: 2%;
+      padding-top: 1%;
+      border-bottom: 2px dashed silver;
     }
   }
 
@@ -23,19 +23,32 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @phone {
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        .phoneflex;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        .phoneflex;
+      }
+
       img {
         border-radius: 10px;
+        @media @phone {
+        width: 96%;
+        }
       }
     }
   }
@@ -43,7 +56,13 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      .phoneflex;
 
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -59,8 +78,16 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      .phoneflex;
+    }
+
     img {
       border-radius: 10px;
+      @media @phone {
+      width: 99%;
+      padding: 1%;
+      }
     }
   }
 
@@ -70,9 +97,85 @@
     display: flex;
     justify-content: space-between;
 
+     @media @phone {
+        display: flex;
+        flex-direction: column;
+        .phoneflex;
+      }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        .phoneflex;
+      }
+     
+      .btn {
+        border: 1px solid @button-bg;
+        padding: 10px;
+        border-radius: 10px;
+        color: @white;
+        font: 2rem;
+        text-align: center;
+        background-color: @button-bg;
+        
+      }
+      .btn:hover {
+        background-color: @sandy-beach;
+        color: white;
+      } 
     }
   }
-}// home
+  .info-form {
+    border-radius: 5px;
+    color: @shark;
+    
+    padding: 2%;
+    margin: 2%;
+    font-size: 1.4rem;
+    h4 {
+      margin-bottom: 13px;
+      text-align: center;
+    }
+    label {
+      display: inline-block;
+      width: 20%;
+      @media @phone {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    input[type=text] {
+      border: 2px solid black;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      border-radius: 5px;
+      width: 78%;
+      @media @phone {
+        width: 100%;
+      }
+    }
+    input[type=text]:focus {
+      background-color: @sandy-beach;
+    }
+    input[type=submit] {
+      background-color: @eastern-blue;
+      border: 2px solid black;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      margin-left: 42%;
+      @media @phone {
+        margin-left: 35%;
+      }
+      cursor: pointer;
+      border-radius: 5px;
+    }
+   }
+  }
+  
